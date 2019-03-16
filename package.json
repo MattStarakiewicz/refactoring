@@ -1,0 +1,29 @@
+{
+  "name": "refactoring",
+  "version": "1.0.0",
+  "description": "19.6",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel script.js --watch --out-file script-compiled.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattStarakiewicz/refactoring.git"
+  },
+  "keywords": [
+    "babel",
+    "ES6",
+    "refactoring"
+  ],
+  "author": "Matt Star",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattStarakiewicz/refactoring/issues"
+  },
+  "homepage": "https://github.com/MattStarakiewicz/refactoring#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  }
+}
