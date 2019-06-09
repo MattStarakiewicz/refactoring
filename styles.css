@@ -5,22 +5,31 @@ body {
 
 .timer {
     width: 300px;
-    height: auto;
-    background-color: #639df9;
-    border-radius: 5px;
+    height: 180px;
+    background-color: #20232a;
+    border-radius: 15px;
 }
 
 .timer .controls  .button {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 35px;
-    color: #fff;
+    color: #61dafb;
     text-decoration: none;
-    padding: 0 10px;
-    background-color: #ccc;
-    border-radius: 4px;
+    padding: 4px 20px;
+    margin: 0px 10px 20px 10px;
+    background-color: #20232a;
+    border-radius: 10px;
+    border: 2px solid #61dafb;
+    transition-duration: 0.4s;
+}
+
+.timer .controls  .button:hover {
+  background-color: #3c414c;
+  border: 3px solid #fff;
+  color: #fff;
 }
 
 .timer .controls  {
@@ -40,12 +49,23 @@ body {
     margin: 20px 20px 10px 10px  ;
 }
 
+.stopwatch-title {
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  text-align: center;
+  line-height: 25px;
+  padding-top: 20px;
+}
+
 .stopwatch {
+    max-width: 300px;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     text-align: center;
-    color: #fff;
-    padding: 0 0 20px 0;
+    color: #61dafb;
+    padding: 10px 10px 20px 10px;
     display: block;
     letter-spacing: 5px;
 }
