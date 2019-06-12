@@ -8,7 +8,7 @@ class Stopwatch extends React.Component {
         };
     }
     
-    startTimer = () => {
+    startTimer() {
       this.setState({
         timerOn: true,
         timerTime: this.state.timerTime,
@@ -21,7 +21,7 @@ class Stopwatch extends React.Component {
       }, 10);
     }
     
-    stopTimer = () => {
+    stopTimer() {
       this.setState({ timerOn: false });
       clearInterval(this.timer);
     }
@@ -33,16 +33,18 @@ class Stopwatch extends React.Component {
       let seconds = ("0" + (Math.floor(timerTime / 1000) % 60)).slice(-2);
       let minutes = ("0" + (Math.floor(timerTime / 60000) % 60)).slice(-2);
       
-      return <div className={'timer'}>
+      return (
+      <div className={'timer'}>
                 <div className={'stopwatch-title'}>React Stopwatch</div>
                 <div className={'stopwatch'}>
                   {minutes} : {seconds} : {miliseconds}
                 </div>
                 <nav className={'controls'}>
-                  <a href={'#'} className={'button'} onClick={this.startTimer}>Start </a>
-                  <a href={'#'} className={'button'} onClick={this.stopTimer}>Stop </a>
+                  <a href={'#'} className={'button'} onClick={this.startTimer.bind(this)}>Start </a>
+                  <a href={'#'} className={'button'} onClick={this.stopTimer.bind(this)}>Stop </a>
                 </nav>
-             </div>;           
+      </div>
+      );           
      }
 }
 
