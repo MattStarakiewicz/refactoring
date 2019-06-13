@@ -24,6 +24,16 @@
   "homepage": "https://github.com/MattStarakiewicz/refactoring#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-latest": "^6.24.1"
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-latest": "^6.24.1",
+    
+    "css-loader": "^3.0.0",
+    "style-loader": "^0.23.1"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "babel-preset-react": "^6.24.1",
+    "react-dom": "^16.8.6"
   }
 }

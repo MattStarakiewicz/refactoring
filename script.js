@@ -34,16 +34,16 @@ class Stopwatch extends React.Component {
       let minutes = ("0" + (Math.floor(timerTime / 60000) % 60)).slice(-2);
       
       return (
-      <div className={'timer'}>
-                <div className={'stopwatch-title'}>React Stopwatch</div>
-                <div className={'stopwatch'}>
-                  {minutes} : {seconds} : {miliseconds}
-                </div>
-                <nav className={'controls'}>
-                  <a href={'#'} className={'button'} onClick={this.startTimer.bind(this)}>Start </a>
-                  <a href={'#'} className={'button'} onClick={this.stopTimer.bind(this)}>Stop </a>
-                </nav>
-      </div>
+        <div className={'timer'}>
+                  <div className={'stopwatch-title'}>React Stopwatch</div>
+                  <div className={'stopwatch'}>
+                    {minutes} : {seconds} : {miliseconds}
+                  </div>
+                  <nav className={'controls'}>
+                    <a href={'#'} className={'button'} onClick={this.startTimer.bind(this)}>Start </a>
+                    <a href={'#'} className={'button'} onClick={this.stopTimer.bind(this)}>Stop </a>
+                  </nav>
+        </div>
       );           
      }
 }
